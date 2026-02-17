@@ -18,7 +18,7 @@ pip package manager
 2. Installation
 
 # Clone the repository
-git clone [https://github.com/yourusername/primetrade-assignment.git](https://github.com/yourusername/primetrade-assignment.git)
+git clone [https://github.com/ayush1k/market-sentiment](https://github.com/ayush1k/market-sentiment)
 cd primetrade-assignment
 
 # Install dependencies
