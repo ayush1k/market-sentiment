@@ -1,14 +1,13 @@
-Trader Behavior & Market Sentiment Analysis
+**Trader Behavior & Market Sentiment Analysis**
 
-Role: Junior Data Scientist Intern | Company: Primetrade.ai
 
-Project Overview
+**Project Overview**
 
 This project analyzes how market sentiment (measured by the Fear & Greed Index) impacts trader behavior and profitability on the Hyperliquid exchange.
 
 By merging historical trade data with daily sentiment classifications, this analysis uncovers behavioral patterns—specifically regarding risk management and directional bias—to formulate actionable trading strategies.
 
-Setup & Usage
+**Setup & Usage**
 
 1. Prerequisites
 
@@ -37,7 +36,7 @@ streamlit run app.py
 
 
 
-Methodology
+**Methodology**
 
 Data Alignment: Converted Hyperliquid Timestamp IST to daily-level UTC dates to enable a Many-to-One left join with the Fear & Greed Index.
 
@@ -51,7 +50,7 @@ Directional Bias: Calculated Long/Short ratios per day.
 
 Segmentation: Grouped traders using K-Means Clustering (k=3) based on frequency and volume to identify distinct behavioral archetypes.
 
-Key Insights & Evidence
+**Key Insights & Evidence**
 
 1. The "Panic-Buying" Paradox
 
@@ -77,7 +76,7 @@ Evidence: The Long/Short ratio spikes to nearly 2.0 (2 Longs for every 1 Short) 
 
 Interpretation: Retail traders overwhelmingly bet on reversals rather than riding the trend, making them highly susceptible to long-squeeze cascades.
 
-Strategy Recommendations ("Actionable Output")
+**Strategy Recommendations ("Actionable Output")**
 
 Strategy A: The "Volatility Regime" Filter
 
@@ -91,7 +90,7 @@ Logic: Retail traders are over-leveraged and over-long during Fear (Insight 2 & 
 
 Rule: "If Sentiment == 'Extreme Fear' AND Long/Short Ratio > 1.8: Enter Short positions targeting the liquidation wicks of these over-extended long positions. Do not go Long until the L/S ratio resets below 1.2."
 
-Bonus: Machine Learning Models
+**Machine Learning Models**
 
 1. Predictive Modeling (Random Forest)
 
@@ -111,7 +110,7 @@ Cluster 1 (Whale Swingers): Low frequency, massive volume ($100k+ avg size).
 
 Cluster 2 (Directional Algos): Extreme Long/Short bias.
 
-File Structure
+**File Structure**
 
 analysis_notebook.ipynb: Complete code for Data Prep, Part B Analysis, and ML models.
 
