@@ -19,7 +19,6 @@ pip package manager
 
 # Clone the repository
 git clone [https://github.com/ayush1k/market-sentiment](https://github.com/ayush1k/market-sentiment)
-cd primetrade-assignment
 
 # Install dependencies
 pip install -r requirements.txt
