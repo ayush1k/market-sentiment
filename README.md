@@ -32,7 +32,7 @@ Jupyter Notebook: Open analysis_notebook.ipynb to view the full data cleaning, E
 Interactive Dashboard: Run the Streamlit app to explore trader segments:
 
 streamlit run app.py
-
+ 
 
 
 **Methodology**
